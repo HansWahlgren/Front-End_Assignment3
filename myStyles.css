@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(243, 243, 243);
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.material-icons{
+    font-size:30px;color:white;
+}
+
+.row{
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+#header{
+    margin-bottom: 7%;
+}
+
+#header > nav > a > img{
+    width: 15%;
+}
+
+#imageshow{
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar ul{
+    margin: 10% 0%;
+}
+
+#maincontent{
+    padding: 3%;
+}
+
+#contact_form{
+    padding: 10.5% 20%;
+    width: 80%;
+    height: 100%;
+}
+
+#random_image{
+    padding-top: 7%;
+}
+
+#random_image > img{
+    width: 80%;
+}
+
+#footer{
+    margin-top: 4%;
+}
+
+#footer nav span{
+    margin-right: 5%;
+}

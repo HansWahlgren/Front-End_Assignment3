@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap assignment</title>
+
+    <!--Mobile-first style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" type="text/css" href="myStyles.css" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="header">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+                        <a class="navbar-brand" href="#">
+                            <img src="christmas_logo.png" alt="Logo">
+                            Christmas
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <h4>Link 1</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <h4>Link 2</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <h4>Link 3</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="imageshow">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="christmas1.jpg" alt="Christmas tree">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="christmas2.jpg" alt="Christmas tree">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="christmas3.jpg" alt="Christmas tree">
+                            </div>
+
+                            <div class="carousel-item bg-dark">
+                                <div id="contact_form">
+                                    <form action="#">
+                                        <div class="form-group text-white">
+                                            <label for="name">Your name:</label>
+                                            <input type="text" class="form-control" placeholder="Enter name" id="name">
+                                        </div>
+                                        <div class="form-group text-white">
+                                            <label for="email">Email address:</label>
+                                            <input type="email" class="form-control" placeholder="Enter email"
+                                                id="email">
+                                        </div>
+                                        <div class="form-group text-white">
+                                            <label for="phone">Phone number:</label>
+                                            <input type="tel" class="form-control" placeholder="Enter phone number"
+                                                id="phone">
+                                        </div>
+                                        <div class="form-group text-white">
+                                            <label for="message">Message:</label>
+                                            <input type="text" class="form-control" placeholder="Enter a message"
+                                                id="message">
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button type="reset" class="btn btn-danger">Reset</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT & SIDEBAR-->
+        <div class="row">
+            <!-- SIDEBAR-->
+            <div class="col-md-3 bg-dark">
+                <div id="sidebar">
+                    <ul class="nav nav-tabs nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#article1">Article 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#article2">Article 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#article3">Article 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#article4">Article 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#article5">Article 5</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MAINCONTENT -->
+            <div class="col-md-9 bg-secondary">
+                <div id="maincontent">
+                    <div class="tab-content">
+                        <article id="article1" class="container tab-pane active">
+                            <h2 class="text-light">Lorem, ipsum.</h2>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                culpa amet aliquam aspernatur omnis commodi suscipit explicabo cum esse. Adipisci
+                                tempore, voluptatibus sint officiis eveniet eaque sit molestiae! Vero obcaecati
+                                assumenda aut adipisci officia illo laudantium, dolore a facere ipsum explicabo dicta
+                                cumque, sunt maxime, architecto nobis maiores minima! Quod, rerum. Eligendi minus hic
+                                culpa maxime assumenda architecto, praesentium, delectus laudantium consectetur
+                                quibusdam, distinctio voluptatibus atque eveniet doloremque a obcaecati rem qui. Ex
+                                ipsum veritatis, dolorem eveniet repellendus vitae odio magnam ea dolorum, soluta iste,
+                                sit maxime aspernatur rerum sed quibusdam recusandae? Autem, error officiis corporis
+                                porro a delectus ipsam aspernatur! Omnis suscipit dolore tempore reprehenderit, numquam
+                                at exercitationem explicabo nesciunt porro nostrum ea officiis rem delectus maiores
+                                dignissimos dolores vero voluptate expedita quaerat voluptatem sed unde enim inventore.
+                                Explicabo, delectus magni corporis facere rem autem nisi perspiciatis quae deserunt
+                                optio deleniti officia, quo amet laboriosam error cum. Molestias reprehenderit est iure
+                                facilis, dolore eum assumenda! Exercitationem esse earum vitae doloribus excepturi vero,
+                                error aliquid asperiores voluptate quod autem!</p>
+                        </article>
+
+                        <article id="article2" class="container tab-pane fade">
+                            <h2 class="text-light">Lorem, ipsum.</h2>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ab
+                                accusantium aliquam cupiditate ullam doloremque voluptatibus ipsam quam vel consequuntur
+                                eius vitae natus porro velit esse assumenda repellendus quod provident, consequatur
+                                reprehenderit suscipit ducimus obcaecati? Eaque, aliquid asperiores sed tenetur deleniti
+                                inventore corporis mollitia odio eius ullam dolor hic. Facilis magnam at, necessitatibus
+                                rem provident dicta consectetur nostrum ducimus deserunt! Exercitationem, expedita. Sunt
+                                quia quis dolor, voluptatibus esse libero corrupti hic et dolorum odio earum officiis
+                                nisi optio quidem. Adipisci error deleniti numquam nesciunt ullam reprehenderit, quae
+                                consectetur provident veniam autem! Accusamus mollitia tempora repellendus, nam earum
+                                fugit sed? Voluptatibus, velit debitis illum ipsam modi optio vero? Consectetur odit
+                                pariatur eaque, laudantium debitis laboriosam nisi alias incidunt suscipit at saepe
+                                libero repudiandae blanditiis? Nostrum illo est cumque eum mollitia magni, nemo unde
+                                distinctio accusantium, dolores explicabo aperiam nihil ad in? Perferendis explicabo
+                                sunt deleniti obcaecati incidunt, inventore eum totam doloremque dolorum, alias,
+                                pariatur repellendus corporis maxime quasi. Minus quam quod nihil iusto tempora non
+                                quisquam dolore impedit atque! Aliquid obcaecati veritatis minima quo beatae adipisci
+                                ipsam expedita eos culpa est?</p>
+                        </article>
+
+                        <article id="article3" class="container tab-pane fade">
+                            <h2 class="text-light">Lorem, ipsum.</h2>
+                            <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+                                labore, sapiente incidunt reiciendis aut, vero accusantium ipsa, cumque fugiat laborum
+                                quidem perferendis enim. Mollitia at sapiente fuga beatae commodi eveniet quasi amet
+                                facilis eius repellat, aspernatur perspiciatis nisi dolorum debitis ex, eum corporis sit
+                                iusto. Sed excepturi laborum veritatis animi iure corporis. Sapiente nobis incidunt ad
+                                corporis repudiandae nisi fugiat hic. Possimus nam ut vel tempore minus error facilis
+                                corporis blanditiis harum nihil accusamus distinctio incidunt repellendus molestiae
+                                eligendi nesciunt autem saepe ratione quidem similique nobis tenetur, dolor sunt!
+                                Explicabo officiis exercitationem nam nostrum vitae itaque et labore hic excepturi a
+                                delectus tempora sapiente aspernatur, architecto dicta illo optio officia nisi omnis,
+                                eum ipsum odio beatae! Qui doloremque quas harum nisi hic eligendi repellat maiores
+                                quos? Tempora vel necessitatibus similique culpa quis ducimus, impedit dolores
+                                distinctio ad autem aut fugiat magnam blanditiis. Ab, repellat totam! Nisi voluptatem at
+                                nulla consequatur omnis similique quasi quas minima? Repudiandae ex velit vel, explicabo
+                                provident praesentium animi, quae consectetur aperiam, aut nobis! Nisi saepe voluptates
+                                neque adipisci dolor reprehenderit corporis ipsam ab excepturi aut?</p>
+                        </article>
+
+                        <article id="article4" class="container tab-pane fade">
+                            <h2 class="text-light">Lorem, ipsum.</h2>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore
+                                unde asperiores possimus praesentium velit soluta nobis aperiam doloremque fuga labore
+                                vel laudantium perferendis esse saepe, sit odit nam animi dolorum voluptate temporibus
+                                reiciendis expedita eum natus? Hic quia iusto expedita! Autem error dignissimos
+                                voluptatum! Et quam dolores debitis! Est sint repudiandae fugit facere esse vero magnam,
+                                consequuntur quidem culpa modi pariatur quaerat, reprehenderit beatae quo dolores ad!
+                                Ullam saepe recusandae ipsa aperiam vel laboriosam tempore consequatur a nobis dolorem
+                                culpa vitae, facilis voluptate inventore dicta suscipit dolor numquam ab quas beatae
+                                itaque illum enim. Libero inventore vel tenetur non quae maiores quidem, error quisquam,
+                                deserunt mollitia consectetur nulla, doloremque placeat consequatur. Ad quasi magnam
+                                autem asperiores soluta! Laborum, omnis? Minus, expedita nostrum consequatur
+                                perspiciatis doloremque impedit non cumque ratione culpa, quasi facilis, itaque ad?
+                                Itaque repellat dignissimos esse veniam porro nisi magnam praesentium cumque explicabo
+                                facere culpa atque aspernatur autem, temporibus quia, neque est quaerat, maxime totam
+                                natus. Minus modi, nostrum ipsam eveniet natus est vel repellendus, ratione nulla
+                                minima, doloremque aut! Deleniti expedita id, minima voluptatibus laborum obcaecati?</p>
+                        </article>
+
+                        <article id="article5" class="container tab-pane fade">
+                            <h2 class="text-light">Lorem, ipsum.</h2>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias a
+                                ducimus aperiam veritatis dolor explicabo magnam, neque libero rerum fugit ex quibusdam
+                                nulla vel ipsa maxime. Accusamus error recusandae facilis harum non? Fugit praesentium
+                                ea necessitatibus error libero, laborum, unde deserunt animi cupiditate dolorem cum
+                                eaque blanditiis. Delectus ut mollitia quibusdam totam reprehenderit tempore impedit
+                                repellat error consequuntur placeat atque esse similique saepe sapiente rem voluptas
+                                praesentium harum illo animi, eligendi amet. Sit repellat deleniti magnam excepturi
+                                architecto aliquid quos quam, error suscipit doloribus blanditiis quia, debitis nemo ex
+                                repudiandae officiis assumenda ea minus laudantium nulla autem! Minus maxime animi
+                                corporis quibusdam architecto fugit distinctio labore? Perspiciatis porro ipsa, sint
+                                quia aut iste totam? Quidem, cumque. Commodi, cupiditate repudiandae delectus fugiat
+                                iusto autem aliquam fugit, aspernatur aut unde eaque at consequatur dolores tenetur ea
+                                quas et facere, obcaecati deserunt ducimus mollitia eos rerum. Quisquam quod consequatur
+                                consequuntur neque earum quo veniam natus non ducimus officiis vel fugiat illum
+                                repellendus accusamus minus ipsam odio, pariatur molestias aut reiciendis maxime at
+                                voluptas aliquid itaque? Neque quas earum placeat tempore nisi fuga necessitatibus!</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="row">
+            <div class="col-md-8 bg-dark">
+                <!--
+                <div id="contact_form">
+                    <form action="#">
+                        <div class="form-group text-white">
+                            <label for="name">Your name:</label>
+                            <input type="text" class="form-control" placeholder="Enter name" id="name">
+                        </div>
+                        <div class="form-group text-white">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group text-white">
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" class="form-control" placeholder="Enter phone number" id="phone">
+                        </div>
+                        <div class="form-group text-white">
+                            <label for="message">Message:</label>
+                            <input type="text" class="form-control" placeholder="Enter a message" id="message">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                    </form>
+                </div>
+                -->
+            </div>
+
+            <!-- RANDOM IMAGE -->
+            <div class="col-md-4 bg-secondary">
+                <div id="random_image">
+                    <img src="christmas4.jpg" class="mx-auto d-block" alt="Christmas decoration">
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="footer">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-bottom justify-content-center">
+                        <i class="material-icons">copyright</i>
+                        <span class="navbar-text">
+                            Philip Wahlgren
+                        </span>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Go to top</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
